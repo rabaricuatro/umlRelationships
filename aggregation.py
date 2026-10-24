@@ -1,20 +1,21 @@
-# Engine is a part of Car
-class Engine:
-    def __init__(self, horsepower):
-        self.horsepower = horsepower
+#$ Classroom has a Student which can exist independently of Classroom
+class Student:
+    def __init__(self, name):
+        self.name = name
 
     def info(self):
-        print(f"I have {self.horsepower} horsepower!")
+        print(f"I am a student and my name is {self.name}!")
 
 
-class Car:
-    def __init__(self, horsepower):
-        self.engine = Engine(horsepower)
+class Classroom:
+    def __init__(self, student):
+        self.student = student
 
     def info(self):
-        print("Car information:")
-        self.engine.info()
+        print("Classroom information:")
+        self.student.info()
 
 
-car = Car(150)
-car.info()
+student = Student("Alex")
+classroom = Classroom(student)
+classroom.info()
