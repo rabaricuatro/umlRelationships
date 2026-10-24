@@ -15,5 +15,5 @@ class Cat(Animal):
         print(f"I am a cat named {self.name}. Meow!")
 
 
-cat = Cat("Meoow")
+cat = Cat("Mew")
 cat.info()
